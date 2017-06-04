@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>档案</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<header>小儿随访档案</header>
+	<div id="head"><img src="images/girl.jpg" alt=""></div>
+	<div class="ever">
+		<div class="left">
+			<div class="ci">3</div>
+			<p>曾参加随访次数</p>
+		</div>
+		<div class="right">
+			<p class="shang">上次随访时间:</p>
+			<p class="date">2017.5.1</p>
+			<p class="grow">小儿成长指数:</p>
+			<p class="months"><span>3</span>个月</p>
+		</div>
+		<div class="alert">
+			<p>切换宝贝档案</p>
+			<div class="pic">
+				<img src="images/boy.jpg" alt="">
+				<span>二娃</span>
+			</div>
+			<div class="news"><a href="index.html">新增成员</a></div>
+			<div class="edit">编辑成员</div>
+		</div>
+		<div class="corn"></div>
+	</div>
+	<div class="history">
+		<p>历史随访时间记录</p>
+		<div class="time">
+			<div>1 |<span> 2017.5.1</span></div>
+			<div>2 |<span> 2017.5.1</span></div>
+			<div>3 |<span> 2017.5.1</span></div>
+			<div>4 |<span> 2017.5.1</span></div>
+			<div>5 |<span> 2017.5.1</span></div>
+		</div>
+	</div>
+	<div class="start">
+		<p>见证成长,<br/>&nbsp;&nbsp;&nbsp;开始新一次的随访记录</p>
+		<img src="images/children.png" alt="">
+		<a href="four.html">开始随访</a>
+	</div>
+	<div class="tool">
+		<p>小工具</p>
+		<div class="tools">
+			<div><a href="norecord.html"><img src="images/up.png" alt=""></a></div>
+			<div><a href="noallergy.html"><img src="images/min.png" alt=""></a></div>
+			<div><a href="nomedical.html"><img src="images/jie.png" alt=""></a></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<script>
+	var head = document.querySelector('#head');
+	var alert = document.querySelector('.ever .alert');
+	var corn = document.querySelector('.ever .corn');
+	head.onclick=function(){
+		if(alert.style.display=='block'){
+			alert.style.display='none';
+		}else{
+			alert.style.display='block';
+		}
+		if(corn.style.display=='block'){
+			corn.style.display='none';
+		}else{
+			corn.style.display='block';
+		}
+	}
+</script>
+</html>

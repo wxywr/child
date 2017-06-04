@@ -1,0 +1,989 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html{
+	font-size: 100px; 
+}
+body{
+	font-size: 0.14rem;
+	background-color: #fff;
+	font-family: 'Microsoft YaHei';
+	background-color: #fff;
+}
+a{
+	text-decoration: none;
+}
+ul,ol,li{
+	list-style:none;
+}
+input{
+	outline: none;
+}
+header{
+	width: 100%;
+	padding: 0.11rem 0;
+	text-align: center;
+	color: #fff;
+	font-size: 0.18rem;
+	font-weight: bold;
+	background-color: #FF679A;
+}
+/*首页*/
+nav{
+	width: 100%;
+}
+nav img{
+	width: 100%;
+}
+#form{
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+}
+#form ul{
+	float: left;
+}
+#form ul li{
+	margin: 0.3rem 0;
+	color: #333;
+	font-size: 0.16rem;
+}
+#form .left{
+	text-align: center;
+	width: 30%;
+}
+#form .right{
+	width: 70%;
+	text-align: left;
+}
+#form .right .year,.month,.day{
+	width: 40px;
+	outline: none;
+	border: 1px solid #FF679A;
+	border-width: 0 0 1px 0;
+	text-align: center;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+#form .right .name{
+	width: 80%;
+	border: 1px solid #FF679A;
+	border-width: 0 0 1px 0;
+	text-align: center;
+	outline: none;
+	font-size: 0.15rem;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+#form .right #man{
+	margin-left: 30px;
+	opacity: 0;
+}
+#form .right #woman{
+	margin-left: 30px;
+	opacity: 0;
+}
+#form .query{
+	display: block;
+	width: 65%;
+	margin: 0 auto;
+	color: #FFF;
+	background-color: #F64CA2;
+	font-size: 0.16rem;
+	padding: 0.05rem 0;
+	border: 0;
+	border-radius: 5px;
+}
+#form .right .people{
+	position: relative;
+}
+#form .right .label-a,.label-b{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../images/sex.png) no-repeat;
+	background-size: 90%;
+	position: absolute;
+}
+#form .right .label-a{
+	background-position: 0 1px;
+	left: 30px;
+	top: 4px;
+}
+#form .right .label-b{
+	background-position: 4px -32px;
+	left: 100px;
+	top: 4px;
+}
+
+/*--------第4次随访--------*/
+.progress{
+	width: 100%;
+}
+h4{
+	text-align: center;
+}
+#height{
+	width: 80%;
+	margin: 0.3rem auto 0;
+}
+#height p{
+	margin: 0.3rem 0;
+	color: #333;
+	font-size: 0.14rem;
+}
+#height p input{
+	outline: none;
+	border: 1px solid #FF679A;
+	border-width: 0 0 1px 0;
+	text-align: center; 
+	width: 60%;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+#height .next{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	color: #FFF;
+	background-color: #F64CA2;
+	font-size: 0.16rem;
+	padding: 0.05rem 0;
+	border: 0;
+	border-radius: 5px;
+}
+#height select{
+	width: 0.43rem;
+	height: 0.22rem;
+	border-radius: 5px;
+}
+.progress{
+	width: 80%;
+	margin: 0.4rem auto;
+}
+.progress .num,.round,.text{
+	overflow: hidden;
+} 
+.progress .num div,.text div{
+	float: left;
+	font-size: 0.07rem;
+	text-align: left;
+} 
+.progress .on,.two{
+	width: 40%;
+}
+.progress .on{
+	color: #FF329A;
+}
+.progress .num .on,.num .two,.num .end{
+	padding-left: 0.15rem;
+}
+.progress .num .two{
+	padding-left: 0.2rem;
+}
+.progress .text div{
+	padding-top: 0.05rem;
+}
+.change .none{
+	display: none;
+}
+.change .select{
+	width: 80%;
+	margin: 0.3rem auto 0;
+	font-size: 0.12rem;
+}
+.change .select .tit span{
+	display: inline-block;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 0.03rem;
+}
+.change .select .tit{
+	font-weight: bold;
+	margin-bottom: 0.15rem;
+}
+.change .select .or{
+	margin: 0.2rem 0.1rem;
+}
+.change .select .family,.milk,.an{
+	width: 1.8rem;
+	height: 0.18rem;
+	border: 1px solid #333;
+	outline: none;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+.find .next{
+	display: block;
+	width: 60%;
+	margin: 0 auto 0.3rem;
+	color: #FFF;
+	background-color: #F64CA2;
+	font-size: 0.16rem;
+	padding: 0.05rem 0;
+	border: 0;
+	border-radius: 5px;
+}
+.change .enter .tit{
+	width: 90%;
+	margin-left: 10%;
+	font-weight: bold;
+}
+.change .enter .good,.bad{
+	width: 90%;
+	margin-left: 10%;
+}
+.change .good,.bad{
+	margin-top: 0.1rem;
+}
+.enter .finish{
+	display: block;
+	width: 60%;
+	margin: 0.5rem auto 0;
+	color: #FFF;
+	background-color: #00CC99;
+	font-size: 0.16rem;
+	padding: 0.05rem 0;
+	border: 0;
+	border-radius: 5px;
+}
+
+/*-----------档案-------------*/
+#head{
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	right: 10px;
+	top: 3px;
+}
+#head img{
+	width: 100%;
+	border-radius: 50%;
+}
+.ever .alert{
+	width: 37%;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	background-color: #fff;
+	box-shadow: 5px 5px 3px #b1b0b0;
+	padding-left: 5px;
+	border-radius: 5px;
+	display: none;
+}
+.ever .corn{
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #b1b0b0;
+	position: absolute;
+	right: 20px;
+	top: -10px;
+	display: none;
+}
+.ever .alert p{
+	font-size: 0.06rem;
+	margin-bottom: 0.05rem;
+}
+.ever .alert .news,.edit{
+	color: #0099FF;
+	font-size: 0.13rem;
+	border-top: 1px solid #ccc;
+	margin: 0.05rem 0;
+}
+.ever .alert .news a{
+	color: #0099FF;
+}
+.ever .alert .pic img{
+	width: 30%;
+	border-radius: 50%;
+	border: 1px solid red;
+	vertical-align: middle;
+}
+.ever{
+	width: 100%;
+	height: 1.1rem;
+	background-color: #fff;
+	border-bottom: 5px solid #ccc;
+	position: relative;
+}
+.ever .left,.right{
+	float: left;
+}
+.ever .left{
+	width: 60%;
+	text-align: center;
+}
+.ever .right{
+	width: 40%;
+	margin-top: 0.15rem;
+	text-align: left;
+}
+.ever .left .ci{
+	font-size: 0.6rem;
+	color: #FF009A;
+}
+.ever .left p{
+	font-size: 0.08rem;
+	color:#333;
+	font-weight: bold;
+}
+.ever .right .shang,.grow,.months{
+	font-size: 0.1rem;
+}
+.ever .right p.date{
+	font-size: 0.2rem;
+	color: #FF679A;
+}
+.ever .right .months span{
+	color: #FF679A;
+	font-size: 0.2rem;
+}
+.history{
+	width: 90%;
+	margin: 0 auto;
+	padding: 0.1rem 0 0.2rem 0;
+}
+.history p{
+	font-size: 0.18rem;
+}
+.history .time{
+	overflow: hidden;
+}
+.history .time div{
+	width: 30%;
+	background-color: #CC66CC;
+	float: left;
+	margin: 0.1rem 3% 0.03rem 0;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	padding: 0.025rem 0;
+}
+.history .time div span{
+	font-size: 0.1rem;
+}
+.start{
+	width: 100%;
+	height: 0.9rem;
+	border: 5px solid #e8e9ec;
+	border-width: 5px 0 5px 0; 
+	background-color: #F5A6D3;
+	position: relative;
+}
+.start p{
+	font-size: 0.2rem;
+	font-family: STXingkai;
+	color: #B80090;
+	margin-top: 0.2rem;
+}
+.start img{
+	width: 10%;
+	position: absolute;
+	right: 5%;
+	top: 0.15rem;
+}
+.start a{
+	display: inline-block;
+	color: #fff;
+	background-color: #CC66CC;
+	text-align: center;
+	padding: 0.03rem;
+	border-radius: 10px;
+	position: absolute;
+	right: 4%;
+	top: 0.3rem;
+}
+.tool{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 5% 0.15rem;
+	border-bottom: 5px solid #ccc;
+}
+.tool p{
+	font-size: 0.18rem;
+	margin: 0.1rem 0 0.2rem;
+}
+.tool .tools{
+	overflow: hidden;
+}
+.tool .tools div{
+	float: left;
+	width: 30%;
+	margin-left: 3%;
+}
+.tool .tools div img{
+	width: 50%;
+	margin-left: 30%;
+}
+
+
+/*成长记录*/
+.line{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0.05rem 5% 0.15rem;
+}
+.line p{
+	color: #FF679A;
+	font-size: 0.15rem;
+}
+.line .cmkg{
+	margin: 0.05rem 0;
+}
+.line .cmkg div{
+	width: 20%;
+	text-align: center;
+	border: 1px solid #ccc;
+	font-size: 0.1rem;
+	padding: 0.02rem 0.03rem;
+	color: #fff;
+	background-color: #CF24AA;
+}
+.ido{
+	width: 100%;
+	border-top: 5px solid #ccc;
+	margin-top: 0.15rem;
+}
+.ido p{
+	color: #FF679A;
+	font-size: 0.15rem;
+	width: 92%;
+	margin: 0.15rem auto;
+	position: relative;
+}
+.ido p .add{
+	display: inline-block;
+	background-color: #FF679A;
+	color: #fff;
+	padding: 0.025rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.ido .info{
+	width: 85%;
+	margin: 0 auto;
+	display: none;
+}
+.ido .height,.ido .weight{
+	width: 0.5rem;
+	height: 0.25rem;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	outline: none;
+}
+.ido .info .ye,.mo,.da{
+	padding: 0;
+	width: 0.45rem;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.mui-table-view .title{
+	overflow: hidden;
+	background-color: #FFE3EF;
+}
+.mui-table-view .title li{
+	float: left;
+	font-size: 0.15rem;
+	color: #993334;
+	width: 33%;
+	text-align: left;
+}
+.mui-table-view .mess{
+	overflow: hidden;
+	position: relative;
+}
+.mui-table-view .mess li{
+	float: left;
+	font-size: 0.13rem;
+	color: #333;
+	width: 33%;
+	text-align: left;
+	line-height: 0.35rem;
+}
+.mui-table-view .mess .del{
+	position: absolute;
+	right: 0;
+	top: 25%;
+}
+.mui-table-view .mess .del img{
+	width: 60%;
+}
+
+/*成长记录空白*/
+.lsjl{
+	width: 100%;
+	padding: 0.05rem 5%;
+	border-bottom: 1px solid #ccc;
+}
+.lsjl p{
+	position: relative;
+}
+.lsjl p span{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #FF679A;
+}
+.do{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.do p{
+	color: #FF679A;
+	font-size: 0.15rem;
+	width: 92%;
+	margin: 0.05rem auto;
+	position: relative;
+}
+.do p .add{
+	display: inline-block;
+	background-color: #FF679A;
+	color: #fff;
+	padding: 0.025rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 0.1rem;
+}
+.quline{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0.05rem 5% 0.15rem;
+}
+.quline p{
+	color: #FF679A;
+	font-size: 0.15rem;
+}
+.quline .cmkg{
+	margin: 0.05rem 0;
+}
+.quline .cmkg div{
+	width: 20%;
+	text-align: center;
+	border: 1px solid #ccc;
+	font-size: 0.1rem;
+	padding: 0.02rem 0.03rem;
+	color: #fff;
+	background-color: #CF24AA;
+}
+.quline .cmkg img{
+	width: 60%;
+	display: block;
+	margin: 0.5rem auto;
+}
+.do .info{
+	width: 85%;
+	margin: 0 auto 0.3rem;
+	display: none;
+}
+.do .height,.do .weight{
+	width: 0.5rem;
+	height: 0.25rem;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	outline: none;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.do .info .ye,.mo,.da{
+	padding: 0;
+	width: 0.52rem;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+/*病历不能丢*/
+.Assessment{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0.1rem 5% 0.15rem;
+}
+.Assessment .blue{
+	color: #00CC98;
+	margin-top: 0.2rem;
+}
+.Assessment .red{
+	color: #FF339A;
+}
+.Assessment .illness{
+	overflow: hidden;
+}
+.Assessment .illness .ill{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.Assessment .illness .number{
+	font-size: 0.6rem;
+	color: #CF24AA;
+}
+.Assessment .illness .ill-b .yu,.ill-c .once{
+	font-size: 0.3rem;
+}
+.Assessment .illness .ill-b .time,.ill-c .rate{
+	color: #CF24AA;
+}
+.Assessment .illness .ill-b .time{
+	margin: 0.15rem 0 0.05rem 0;
+}
+.Assessment .illness .ill-c .rate{
+	margin-top: 0.15rem;
+	margin-bottom: 0.24rem;
+}
+.ill-list{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0 5% 0.2rem;
+}
+.ill-list .tit{
+	color: #FF339A;
+	padding: 0.05rem 0 0.04rem 0.05rem;
+	border-bottom: 1px solid #ccc;
+}
+.ill-list .one{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.15rem
+}
+.ill-list .one .document{
+	margin-top: 0.05rem;
+	font-size: 0.12rem;
+}
+.ill-list .one .zi{
+	overflow: hidden;
+}
+.ill-list .one .zi div{
+	float: left;
+	width: 30%;
+	height: 0.61rem;
+	background-color: #cfd4e3;
+	margin-right: 3%;
+	box-shadow: 5px 5px 5px #ccc;
+}
+.ill-list .one .zi img{
+	width: 100%;
+}
+.yao{
+	width: 100%;
+	padding: 0 5%;
+}
+.yao .tit{
+	color: #FF339A;
+	margin: 0.1rem 0;
+	position: relative;
+}
+.yao .add{
+	display: inline-block;
+    background-color: #FF679A;
+    color: #fff;
+    padding: 0.025rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.yao .infos span{
+	color: #CF24AA;
+}
+.yao .infos .all{
+	margin-bottom: 0.15rem;
+}
+.yao .infos .all{
+	overflow: hidden;
+}
+.yao .infos .all div{
+	float: left;
+	width: 23%;
+	height: 0.67rem;
+	background-color: #cfd4e3;
+	margin-right: 2%;
+	margin-top: 0.05rem;
+}
+.yao .infos .all img{
+	width: 100%;
+}
+.yao .infos{
+	display: none;
+}
+/*-----病历空白------*/
+.Assessments{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0.1rem 5% 0.15rem;
+}
+.Assessments .blue{
+	color: #00CC98;
+	margin-top: 0.2rem;
+}
+.Assessments .red{
+	color: #FF339A;
+}
+.Assessments .illness{
+	overflow: hidden;
+}
+.Assessments .illness .ill{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.Assessments .numbe,.tim,.rat{
+	font-size: 0.6rem;
+	color: #CF24AA;
+}
+.lici{
+	width: 100%;
+	padding: 0.05rem 5%;
+	border-bottom: 1px solid #ccc;
+	color: #FF679A;
+}
+.lici p{
+	position: relative;
+}
+.lici p span{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.me{
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.me p{
+	color: #FF679A;
+	font-size: 0.15rem;
+	width: 92%;
+	margin: 0.05rem auto;
+	position: relative;
+}
+.me p .new{
+	display: inline-block;
+	background-color: #FF679A;
+	color: #fff;
+	padding: 0.025rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 0.1rem;
+}
+.me .info{
+	width: 85%;
+	margin: 0 auto 0.3rem;
+	display: none;
+}
+.me .height,.me .weight{
+	width: 0.5rem;
+	height: 0.25rem;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	outline: none;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+.me .info .ye,.mo,.da{
+	padding: 0;
+	width: 0.52rem;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.first-a,.first-b{
+	width: 70%;
+	margin: 0 auto;
+	display: block;
+}
+.first-a{
+	margin-bottom: 0.5rem;
+}
+.first-aa{
+	width: 40%;
+	margin-bottom: 0.5rem;
+}
+.first-c{
+	width: 60%;
+	margin-left: 10%;
+}
+/*-------过敏源标记------------*/
+.yuan{
+	width: 100%;
+	border-bottom: 5px solid #ccc;
+	padding: 0.1rem 5% 0.05rem;
+}
+.yuan p.baby{
+	color: #FF679A;
+	font-size: 0.17rem;
+}
+.yuan .img{
+	overflow: hidden;
+}
+.yuan .img div{
+	float: left;
+	width: 20%;
+	margin-right: 5%;
+	text-align: center;
+}
+.yuan .img img{
+	width: 100%;
+}
+.mui-switch .mui-active {
+    border-color: red;
+    background-color: red;
+}
+.mui-switch{
+	height: 25px;
+}
+.lu{
+	width: 100%;
+	border-top: 5px solid #ccc;
+	margin-top: 0.15rem;
+}
+.lu p{
+	color: #FF679A;
+	font-size: 0.13rem;
+	width: 92%;
+	margin: 0.15rem auto;
+	position: relative;
+}
+.lu p .add{
+	display: inline-block;
+	background-color: #FF679A;
+	color: #fff;
+	padding: 0.025rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.lu .info{
+	width: 85%;
+	margin: 0 auto;
+	font-size: 0.13rem;
+	display: none;
+}
+.lu .min{
+	width: 1.8rem;
+	height: 0.25rem;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	margin-left: 0.2rem;
+}
+.lu .info .nian,.yue,.ri{
+	padding: 0;
+	width: 0.45rem;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.lu .info .select{
+	position: relative;
+}
+.lu .info .mui-switch{
+	position: absolute;
+	top: 0;
+	right: 6%;
+}
+.lu .want{
+	font-size: 0.17rem;
+}
+/*------过敏源空白-----*/
+.yuan .baby{
+	color: #FF679A;
+	font-size: 0.16rem;
+}
+.yuan .xian{
+	text-align: center;
+	color: #CF24AA;
+	font-size: 0.6rem;
+}
+.found{
+	width: 100%;
+	padding: 0.05rem 5%;
+	border-bottom: 1px solid #ccc;
+}
+.found p{
+	position: relative;
+	font-size: 0.16rem;
+	color: #FF679A;
+}
+.found p span{
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #FF679A;
+}
+.add-min{
+	width: 100%;
+	padding: 0.05rem 5% 0;
+	border-bottom: 1px solid #ccc;
+}
+.add-min p{
+	color: #FF679A;
+	font-size: 0.16rem;
+	position: relative;
+}
+.add-min p span{
+	display: inline-block;
+	background-color: #FF679A;
+	color: #fff;
+	padding: 0.025rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 0.1rem;
+}
+.add-min .info{
+	width: 86%;
+	margin: 0 auto 0.2rem;
+	font-size: 0.13rem;
+	display: none;
+}
+.add-min .min{
+	width: 1.8rem;
+	height: 0.25rem;
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	margin-left: 0.2rem;
+}
+.add-min .info .nian,.yue,.ri{
+	padding: 0;
+	width: 0.45rem;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.add-min .info .select{
+	position: relative;
+}
+.add-min .info .mui-switch{
+	position: absolute;
+	top: 0;
+	right: 6%;
+}
+.add-min .want{
+	font-size: 0.17rem;
+}
+
+.page{
+	position: absolute;
+	left: 5%;
+	top: 2%;
+}
+.page img{
+	width: 60%;
+}

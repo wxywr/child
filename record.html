@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>成长记录</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/mui.css" type="text/css">	
+	<link rel="stylesheet" href="css/mui.min.css" type="text/css">
+</head>
+<body style="background-color: #fff;">
+	<header>成长记录</header>
+	<div class="line">
+		<p>成长曲线</p>
+		<div class="cmkg">
+			<div class="cm">身高(cm)</div>
+		</div>
+		<div id="c1"></div>
+		<div class="cmkg">
+			<div class="kg">体重(kg)</div>
+		</div>
+		<div id="c2"></div>
+	</div>
+	<ul class="mui-table-view"> 
+        <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right" href="#" style="color: #FF679A;background-color: #fff;">历史记录</a>
+            <div class="mui-collapse-content">
+                <ul class="title">
+                	<li style="text-indent: 5px;">时间</li>
+                	<li>身高(cm)</li>
+                	<li>体重(kg)</li>
+                </ul>
+                <ul class="one mess">
+                	<li>2017.02.08</li>
+                	<li>59.6</li>
+                	<li>5.2</li>
+                  <div class="del"><img src="images/delete.png" alt=""></div>
+                </ul>
+               <ul class="three mess">
+                	<li>2016.12.01</li>
+                	<li>53.6</li>
+                	<li>4.7</li>
+                  <div class="del"><img src="images/delete.png" alt=""></div>
+                </ul>
+                <ul class="three mess">
+                	<li>2016.10.01</li>
+                	<li>56.6</li>
+                	<li>5.7</li>
+                  <div class="del"><img src="images/delete.png" alt=""></div>
+                </ul>
+            </div>
+        </li>
+    </ul>
+	<div class="ido">
+		<p>我要记录<span class="add">+ 新增</span></p>
+		<div class="info">
+			<div>时间 :
+				<select name="year1" class="ye"></select>年
+				<select name="month1" class="mo"></select>月
+				<select name="day1" class="da"></select>日
+			</div>
+			<div>身高 :<input type="text" class="height" name="tall">cm</div>
+			<div>体重 :<input type="text" class="weight" name="fat">kg</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/mui/mui.js"></script>
+<script src="https://a.alipayobjects.com/jquery/jquery/1.11.1/jquery.js"></script>
+<script src="https://a.alipayobjects.com/g/datavis/g2/2.3.2/g2.js"></script>
+<script type="text/javascript" src="js/YMDClass.js"></script>
+<script>
+	new YMDselect('year1','month1','day1');
+
+	// ---身高----
+	var data = [
+        {month: '0', temperature: 0},
+        {month: '3', temperature: 20},
+        {month: '6', temperature: 30},
+        {month: '9', temperature: 50},
+        {month: '12', temperature: 100},
+      ];
+      var chart = new G2.Chart({
+        id: 'c1',
+        forceFit: true,
+        height: 240
+      });
+      chart.source(data, {
+        month: {
+          alias: '月份',
+          range: [0, 1]
+        },
+        temperature: {
+          alias: '身高'
+        }
+      });
+      chart.line().position('month*temperature').size(2);
+      chart.render();
+
+      // ----体重-----
+      var data = [
+        {month: '0', temperature: 3.0},
+        {month: '3', temperature: 5.0},
+        {month: '6', temperature: 10.0},
+        {month: '9', temperature: 15.0},
+        {month: '12', temperature: 20.0},
+      ];
+      var chart = new G2.Chart({
+        id: 'c2',
+        forceFit: true,
+        height: 240
+      });
+      chart.source(data, {
+        month: {
+          alias: '月份',
+          range: [0, 1]
+        },
+        temperature: {
+          alias: '体重'
+        }
+      });
+      chart.line().position('month*temperature').size(2);
+      chart.render();
+
+
+      var del = document.querySelectorAll('.mess .del');
+      var content=document.querySelector('.mui-collapse-content');
+      for(var i=0;i<del.length;i++){
+        del[i].onclick=function(){
+          if(window.confirm('确定删除吗？')){
+            var removeObj=this.parentNode;
+            content.removeChild(removeObj);
+            return true;
+          }else{
+            return false;
+          }
+        }
+      }
+</script>
+</html>

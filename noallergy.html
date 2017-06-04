@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>过敏源空白</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/mui.css" type="text/css">	
+	<link rel="stylesheet" href="css/mui.min.css" type="text/css">
+</head>
+<body style="background-color: #fff;">
+	<header>过敏源标记</header>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a></div>
+	<div class="yuan">
+		<p>宝宝的过敏源</p>
+		<div class="xian">--</div>
+	</div>
+	<div class="found">
+		<p>历次发现<span>--</span></p>
+	</div>
+	<div class="add-min">
+		<p>添加过敏源<span class="add">+ 新增</span></p>
+		<div class="info">
+			<div>发现时间 :
+				<select name="year1" class="nian"></select>年
+				<select name="month1" class="yue"></select>月
+				<select name="day1" class="ri"></select>日
+			</div>
+			<div>过敏源 :<input type="text" class="min" name=""></div>
+			<div class="select">是否过敏 :<div class="mui-switch mui-active mui-switch-blue"><div class="mui-switch-handle"></div></div></div>
+		</div>
+	</div>
+	<img src="images/pa.png" alt="" class="first-aa bj">
+	<img src="images/bai.png" alt="" class="first-b bj">
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/mui/mui.js"></script>
+<script type="text/javascript" src="js/YMDClass.js"></script>
+<script>
+	new YMDselect('year1','month1','day1');
+</script>
+</html>

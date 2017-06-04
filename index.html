@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>小儿随访</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<header>创建小儿档案</header>
+	<nav><img src="images/baby.png" alt=""></nav>
+	<form action="" id="form" method="post">
+		<ul class="left">
+			<li>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名 :</li>
+			<li>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别 :</li>
+			<li>出生年月 :</li>
+		</ul>
+		<ul class="right">
+			<li><input type="text" class="name" name="name" value="" placeholder="请输入姓名"></li>
+			<li class="people"><input type="checkbox" id="man" name="man" value="male"><label for="man" class="label-a"></label> 男
+			<input type="checkbox" id="woman" name="woman" value="female"><label for="woman" class="label-b"></label> 女</li>
+			<li><input type="text" name="year" class="year" value="">年
+			<input type="text" name="month" class="month" value="">月
+			<input type="text" name="day" class="day" value="">日</li>
+		</ul>
+		<button class="query">开 始 呵 护</button>
+	</form>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<script>
+	var m = document.querySelector('#form .right #man');
+	var a = document.querySelector('#form .right .label-a');
+	var w = document.querySelector('#form .right #woman');
+	var b = document.querySelector('#form .right .label-b');
+	//初始状态
+	m.checked = true;
+	a.style.backgroundPosition='0 -15px';
+	m.onclick=function(){
+		console.log('男');
+		a.style.backgroundPosition='0 -15px';
+		b.style.backgroundPosition='4px -32px';
+		m.checked = true;
+		w.checked = false;
+	}
+	w.onclick=function(){
+		console.log('女');
+		a.style.backgroundPosition='0 1px';
+		b.style.backgroundPosition='4px -49px';
+		w.checked = true;
+		m.checked = false;
+	}
+</script>
+</html>

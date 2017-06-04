@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>成长记录空白</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<header>成长记录</header>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a></div>
+	<div class="quline">
+		<p>成长曲线</p>
+		<div class="cmkg">
+			<div class="cm">身高(cm)</div>
+			<img src="images/bao.png" alt="">
+		</div>
+		<div class="cmkg">
+			<div class="kg">体重(kg)</div>
+			<img src="images/bao.png" alt="">
+		</div>
+	</div>
+	<div class="lsjl">
+		<p>历史记录<span>--</span></p>
+	</div>
+	<div class="do">
+		<p>我要记录<span class="add">+ 新增</span></p>
+		<div class="info">
+			<div>时间 :
+				<select name="year1" class="ye"></select>年
+				<select name="month1" class="mo"></select>月
+				<select name="day1" class="da"></select>日
+			</div>
+			<div>身高 :<input type="text" class="height" name="tall">cm</div>
+			<div>体重 :<input type="text" class="weight" name="fat">kg</div>
+		</div>
+	</div>
+	<img src="images/begin.png" alt="" class="first-c lis">
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<script type="text/javascript" src="js/YMDClass.js"></script>
+<script>
+	new YMDselect('year1','month1','day1');
+</script>
+</html>
