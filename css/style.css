@@ -869,7 +869,7 @@ h4{
 }
 .lu .info{
 	width: 85%;
-	margin: 0 auto;
+	margin: 0 auto 0.1rem;
 	font-size: 0.13rem;
 	display: none;
 }
