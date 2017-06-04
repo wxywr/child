@@ -90,7 +90,7 @@ nav img{
 #form .query{
 	display: block;
 	width: 65%;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
 	color: #FFF;
 	background-color: #F64CA2;
 	font-size: 0.16rem;
@@ -850,7 +850,7 @@ h4{
 	width: 100%;
 	border-top: 5px solid #ccc;
 	margin-top: 0.15rem;
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.3rem;
 }
 .lu p{
 	color: #FF679A;
