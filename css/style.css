@@ -850,6 +850,7 @@ h4{
 	width: 100%;
 	border-top: 5px solid #ccc;
 	margin-top: 0.15rem;
+	margin-bottom: 0.2rem;
 }
 .lu p{
 	color: #FF679A;
@@ -869,7 +870,7 @@ h4{
 }
 .lu .info{
 	width: 85%;
-	margin: 0 auto 0.1rem;
+	margin: 0 auto;
 	font-size: 0.13rem;
 	display: none;
 }
