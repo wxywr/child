@@ -56,11 +56,16 @@
 	(function(){
         var form = document.getElementById('form');
         var input = form.getElementsByClassName('amount');
-        console.log(input);
+        var text = form.getElementsByClassName('name')[0];
+        //只能输入数字
         for(var i = 0; i < input.length; i++){
             input[i].onfocus = input[i].onblur = input[i].onkeyup = function(){
                 this.value = this.value.replace(/\D/g, '');
             }
+        }
+        //只能输入中文
+        text.onfocus = text.onblur = text.onkeyup = function(){
+            this.value = this.value.replace(/[^\u4E00-\u9FA5]/g,'');
         }
     }());
 
