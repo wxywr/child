@@ -20,12 +20,13 @@
 			<li><input type="text" class="name" name="name" value="" placeholder="请输入姓名"></li>
 			<li class="people"><input type="checkbox" id="man" name="man" value="male"><label for="man" class="label-a"></label> 男
 			<input type="checkbox" id="woman" name="woman" value="female"><label for="woman" class="label-b"></label> 女</li>
-			<li><input type="text" name="year" class="year" value="">年
-			<input type="text" name="month" class="month" value="">月
-			<input type="text" name="day" class="day" value="">日</li>
+			<li><input type="text" name="year" class="year amount" value="">年
+			<input type="text" name="month" class="month amount" value="">月
+			<input type="text" name="day" class="day amount" value="">日</li>
 		</ul>
 	</form>
 	<div class="care"><a href="javascript:;" class="btn">开 始 呵 护</a></div>
+	<div class="remind">请填写完整 !</div>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
@@ -51,5 +52,18 @@
 		w.checked = true;
 		m.checked = false;
 	}
+
+	(function(){
+        var form = document.getElementById('form');
+        var input = form.getElementsByClassName('amount');
+        console.log(input);
+        for(var i = 0; i < input.length; i++){
+            input[i].onfocus = input[i].onblur = input[i].onkeyup = function(){
+                this.value = this.value.replace(/\D/g, '');
+            }
+        }
+    }());
+
+
 </script>
 </html>

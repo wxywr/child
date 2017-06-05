@@ -94,4 +94,16 @@ $(function(){
 		$('.me .info').css('display','block');
 	})
 
+	//首页表单提交验证
+	$('.care').click(function(){
+		var _name = $('#form .name').val();
+		var _year = $('#form .year').val();
+		var _month = $('#form .month').val();
+		var _day = $('#form .day').val();
+		if(_name==''||_year==''||_month==''||_day==''){
+			$('.remind').fadeIn().delay(2000).fadeOut();
+			return false;
+		}
+	})
+
 })

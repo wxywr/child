@@ -123,6 +123,16 @@ nav img{
 	left: 100px;
 	top: 4px;
 }
+.remind{
+	width: 0.8rem;
+    background-color: #5d5a5a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.12rem;
+    padding: 0.05rem 0;
+    margin: 0.2rem auto;
+    display: none;
+}
 
 /*--------第4次随访--------*/
 .progress{
