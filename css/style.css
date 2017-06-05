@@ -172,8 +172,11 @@ h4{
 	outline: none;
 }
 #height select{
-	padding: 0;
-	width: 0.45rem;
+	padding: 0.01rem 0;
+	-webkit-appearance:none;
+	border: none;
+	outline: none;
+	width: 0.43rem;
     border-radius: 5px;
     background-color: #ccc;
 }
@@ -539,7 +542,7 @@ h4{
 	color: #333;
 	width: 33%;
 	text-align: left;
-	line-height: 0.35rem;
+	margin: 0.05rem 0;
 }
 .mui-table-view .mess .del{
 	position: absolute;
