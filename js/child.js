@@ -106,4 +106,18 @@ $(function(){
 		}
 	})
 
+	//随访身高体重验证
+	$('#height .next').click(function(){
+		var tall = $('#height .tall').val();
+		var fat = $('#height .fat').val();
+		if(tall==''||fat==''){
+			$('.please').fadeIn().delay(2000).fadeOut();
+			return false;
+		}
+	})
+
+
+
 })
+
+

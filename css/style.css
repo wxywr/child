@@ -172,9 +172,10 @@ h4{
 	outline: none;
 }
 #height select{
-	width: 0.43rem;
-	height: 0.22rem;
-	border-radius: 5px;
+	padding: 0;
+	width: 0.45rem;
+    border-radius: 5px;
+    background-color: #ccc;
 }
 .progress{
 	width: 80%;
@@ -269,6 +270,16 @@ h4{
 	border: 0;
 	border-radius: 5px;
 	outline: none;
+}
+.please{
+	width: 0.8rem;
+    background-color: #5d5a5a;
+    color: #fff;
+    text-align: center;
+    font-size: 0.12rem;
+    padding: 0.05rem 0;
+    margin: 0.2rem auto;
+    display: none;
 }
 
 /*-----------档案-------------*/

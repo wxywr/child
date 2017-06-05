@@ -25,8 +25,8 @@
 		<div class="shen block">
 			<h4>第一步 : 身高体重</h4>
 			<form action="" id="height" method="post">
-				<p>身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高 : <input type="text" class="tall" name="height" placeholder="请输入数字">cm</p>
-				<p>体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重 : <input type="text" class="fat" name="weight" placeholder="请输入数字">kg</p>
+				<p>身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高 : <input type="text" class="tall hw" name="height" placeholder="请输入数字">cm</p>
+				<p>体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重 : <input type="text" class="fat hw" name="weight" placeholder="请输入数字">kg</p>
 				<p>出生年月：
 					<select name="year1" class="y"></select>年
 					<select name="month1" class="m"></select>月
@@ -34,6 +34,7 @@
 				</p>
 				<button class="next">下一步</button>
 			</form> 
+			<div class="please">请填写完整 !</div>
 		</div>
 		<div class="find block none">
 			<h4>第二部:回答选项寻找过敏源</h4>
@@ -146,5 +147,13 @@
 <script type="text/javascript" src="js/YMDClass.js"></script>
 <script>
 	new YMDselect('year1','month1','day1');
+
+	var hw = document.getElementsByClassName('hw');
+	for(var i=0;i<hw.length;i++){
+	//限制只能输入数字和小数点
+	hw[i].onfocus = hw[i].onblur = hw[i].onkeyup = function(){
+         this.value = this.value.replace(/[^\d.]/g,'');
+    }
+}
 </script>
 </html>
