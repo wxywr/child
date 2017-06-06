@@ -81,11 +81,11 @@ nav img{
 }
 #form .right #man{
 	margin-left: 30px;
-	opacity: 0;
+	opacity: 1;
 }
 #form .right #woman{
 	margin-left: 30px;
-	opacity: 0;
+	opacity: 1;
 }
 .care{
 	display: block;
@@ -114,7 +114,7 @@ nav img{
 	position: absolute;
 }
 #form .right .label-a{
-	background-position: 0 1px;
+	background-position: 0 -15px;
 	left: 30px;
 	top: 4px;
 }
