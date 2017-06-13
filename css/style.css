@@ -92,13 +92,13 @@ nav img{
 	background-size: cover;
 }
 #form .right .label-b{
-	background-position: 0 -0.43rem;
+	background-position: 0 -0.42rem;
 }
 #form .right input[type="radio"]:checked+label.label-a{
 	background-position: 0 -0.21rem;
 }
 #form .right input[type="radio"]:checked+label.label-b{
-	background-position: 0 -0.64rem;
+	background-position: 0 -0.63rem;
 }
 
 #form .right #man{
