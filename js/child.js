@@ -116,8 +116,38 @@ $(function(){
 		}
 	})
 
+	//上一题，下一题
+	$(".lun .qian").css('backgroundColor','#FF329A');
+	var r=0;
+	$(".lun .qian").click(function(){
+		$(this).css('backgroundColor','#FF329A');
+		$(".lun .hou").css('backgroundColor','#ccc');
+		r--;
+		lunbo();
+	})
+	$(".lun .hou").click(function(){
+		$(this).css('backgroundColor','#FF329A');
+		$(".lun .qian").css('backgroundColor','#ccc');
+		r++;
+		lunbo();
+	})
+	function lunbo(){
+		$('.lun .img .select').eq(r).show();
+		$('.lun .img .select').eq(r).siblings().hide();
+	}
 
-
+	//二选一
+	$('.enter .bad input').click(function(){
+		$('.enter .must').css('display','block');
+		$('.enter .yea').css('display','block');
+		$('.enter .ye').css('display','none');
+	})
+	
+	$('.enter .good input').click(function(){
+		$('.enter .must').css('display','none');
+		$('.enter .yea').css('display','none');
+		$('.enter .ye').css('display','block');
+	})
 })
 
 

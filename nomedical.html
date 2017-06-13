@@ -34,22 +34,32 @@
 	<div class="me">
 		<p>我要记录<span class="new">+ 新增</span></p>
 		<div class="info">
-			<div>时间 :
-				<select name="year1" class="ye"></select>年
-				<select name="month1" class="mo"></select>月
-				<select name="day1" class="da"></select>日
+			<div class="check">
+				<p>检查资料上传<span>(检查、化验、报告单)</span></p>
+				<div class="check-list all">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div><img src="images/chuan.png" alt=""></div>
+				</div>
 			</div>
-			<div>身高 :<input type="text" class="height" name="tall">cm</div>
-			<div>体重 :<input type="text" class="weight" name="fat">kg</div>
+			<div class="zhen">
+				<p>诊断资料上传<span>(医生书写的病历)</span></p>
+				<div class="zhen-list all">
+					<div><img src="images/add.png" alt=""></div>
+				</div>
+			</div>
+			<div class="zhi">
+				<p>治疗资料上传<span>(处方、药品照片)</span></p>
+				<div class="zhi-list all">
+					<div><img src="images/add.png" alt=""></div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<img src="images/dian.png" alt="" class="first-a here">
-	<img src="images/kong.png" alt="" class="first-b here">
+	<img src="images/dian.png" alt="" class="first-a here bl_a">
+	<img src="images/kong.png" alt="" class="first-b here bl_b">
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
-<script type="text/javascript" src="js/YMDClass.js"></script>
-<script>
-	new YMDselect('year1','month1','day1');
-</script>
 </html>

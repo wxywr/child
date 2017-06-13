@@ -18,8 +18,8 @@
 		</ul>
 		<ul class="right">
 			<li><input type="text" class="name" name="name" value="" placeholder="请输入姓名"></li>
-			<li class="people"><input type="checkbox" id="man" name="man" value="male" class="sex"><label for="man" class="label-a"></label> 男
-			<input type="checkbox" id="woman" name="woman" value="female" class="sex"><label for="woman" class="label-b"></label> 女</li>
+			<li class="people"><input type="radio" id="man" name="sexs" value="male" class="sex"><label for="man" class="label-a"></label> 男
+			<input type="radio" id="woman" name="sexs" value="female" class="sex" checked=""><label for="woman" class="label-b"></label> 女</li>
 			<li><input type="text" name="year" class="year amount" value="">年
 			<input type="text" name="month" class="month amount" value="">月
 			<input type="text" name="day" class="day amount" value="">日</li>
@@ -31,48 +31,6 @@
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
 <script>
-	// var m = document.querySelector('#form .right #man');
-	// var a = document.querySelector('#form .right .label-a');
-	// var w = document.querySelector('#form .right #woman');
-	// var b = document.querySelector('#form .right .label-b');
-	//初始状态
-	// m.checked = true;
-	// a.style.backgroundPosition='0 -15px';
-	// m.onclick=function(){
-	// 	console.log(111);
-		// console.log('男');
-		// a.style.backgroundPosition='0 -15px';
-		// b.style.backgroundPosition='4px -32px';
-		// m.checked = true;
-	// 	w.checked = false;
-	// }
-	// w.onclick=function(){
-	// 	console.log(222);
-	// 	console.log('女');
-	// 	a.style.backgroundPosition='0 1px';
-	// 	b.style.backgroundPosition='4px -49px';
-		// w.checked = true;
-	// 	m.checked = false;
-	// }
-
-	var sex = document.querySelectorAll('#form .right .sex');
-	var label = document.querySelectorAll('#form .right label');
-	sex[0].checked = true;
-	sex[0].onclick=function(){
-		console.log(111);
-		label[0].style.backgroundPosition='0 -15px';
-		label[1].style.backgroundPosition='4px -32px';
-		sex[0].checked = true;
-		sex[1].checked = false;
-	}
-	sex[1].onclick=function(){
-		console.log(222);
-		label[1].style.backgroundPosition='4px -49px';
-		label[0].style.backgroundPosition='0 1px';
-		sex[1].checked = true;
-		sex[0].checked = false;
-	}
-
 	(function(){
         var form = document.getElementById('form');
         var input = form.getElementsByClassName('amount');
@@ -88,7 +46,6 @@
             this.value = this.value.replace(/[^\u4E00-\u9FA5]/g,'');
         }
     }());
-
 
 </script>
 </html>

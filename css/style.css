@@ -79,13 +79,35 @@ nav img{
 	-webkit-appearance: none;
 	border-radius: 0;
 }
+#form .right label{
+	display: inline-block;
+	width: .17rem;
+	height: .17rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/sex.png);
+	background-size: cover;
+}
+#form .right input[type="radio"]:checked+label{
+	background-image: url(../images/sex.png);
+	background-size: cover;
+}
+#form .right .label-b{
+	background-position: 0 -0.43rem;
+}
+#form .right input[type="radio"]:checked+label.label-a{
+	background-position: 0 -0.21rem;
+}
+#form .right input[type="radio"]:checked+label.label-b{
+	background-position: 0 -0.64rem;
+}
+
 #form .right #man{
 	margin-left: 30px;
-	opacity: 1;
+	opacity: 0;
 }
 #form .right #woman{
 	margin-left: 30px;
-	opacity: 1;
+	opacity: 0;
 }
 .care{
 	display: block;
@@ -101,27 +123,6 @@ nav img{
 }
 .care a{
 	color: #fff;
-}
-#form .right .people{
-	position: relative;
-}
-#form .right .label-a,.label-b{
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: url(../images/sex.png) no-repeat;
-	background-size: 90%;
-	position: absolute;
-}
-#form .right .label-a{
-	background-position: 0 -15px;
-	left: 30px;
-	top: 4px;
-}
-#form .right .label-b{
-	background-position: 4px -32px;
-	left: 100px;
-	top: 4px;
 }
 .remind{
 	width: 0.8rem;
@@ -162,7 +163,7 @@ h4{
 #height .next{
 	display: block;
 	width: 80%;
-	margin: 0 auto;
+	margin: 1.5rem auto 0;
 	color: #FFF;
 	background-color: #F64CA2;
 	font-size: 0.16rem;
@@ -215,7 +216,7 @@ h4{
 .change .select{
 	width: 80%;
 	margin: 0.3rem auto 0;
-	font-size: 0.12rem;
+	font-size: 0.14rem;
 }
 .change .select .tit span{
 	display: inline-block;
@@ -223,6 +224,7 @@ h4{
 	color: #fff;
 	text-align: center;
 	padding: 0.03rem;
+	border-radius: 0.05rem;
 }
 .change .select .tit{
 	font-weight: bold;
@@ -243,7 +245,7 @@ h4{
 .find .next{
 	display: block;
 	width: 65%;
-	margin: 0 auto 0.3rem;
+	margin: 1.3rem auto 0;
 	color: #FFF;
 	background-color: #F64CA2;
 	font-size: 0.16rem;
@@ -267,7 +269,7 @@ h4{
 .enter .finish{
 	display: block;
 	width: 65%;
-	margin: 0.5rem auto 0;
+	margin: 2rem auto 0;
 	color: #FFF;
 	background-color: #00CC99;
 	font-size: 0.16rem;
@@ -285,6 +287,107 @@ h4{
     padding: 0.05rem 0;
     margin: 0.2rem auto;
     display: none;
+}
+.lun{
+	width: 100%;
+    position: relative;
+}
+.lun img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.lun .btn {
+    position: absolute;
+    left: 25%;
+    bottom: -1rem;
+}
+.lun li{
+    float: left;
+    margin-left: 0.2rem;
+    background-color: #ccc;
+    font-size: 0.14rem;
+    color: #fff;
+    text-align: center;
+    padding: 0.02rem 0.05rem;
+}
+.lun .hide{
+	display: none;
+}
+.find .lun .select label{
+	display: inline-block;
+	width: .17rem;
+	height: .17rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/radio-a.png);
+	background-size: cover;
+}
+.find .lun .select input[type="radio"]:checked+label{
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
+}
+.find .lun .select input[type="radio"],input[type="checkbox"]{
+	opacity: 0;
+}
+.find .lun .select input[type="checkbox"]:checked+label{
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
+}
+.enter input[type="radio"]{
+	opacity: 0;
+}
+.enter label{
+	display: inline-block;
+	width: .2rem;
+	height: .2rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/fu.png);
+	background-size: cover;
+}
+.enter input[type="radio"]:checked+label{
+	background-image: url(../images/fuu.png);
+	background-size: cover;
+}
+.enter .must{
+	width: 90%;
+	margin: 0 auto;
+	display: none;
+}
+.enter .must .warn{
+	color: #EE4F75;
+    margin: 0.1rem 0 0.1rem 0.1rem;
+}
+.enter .must .infos span{
+	color: #CF24AA;
+}
+.enter .must .infos .all{
+	margin-bottom: 0.15rem;
+	overflow: hidden;
+}
+.enter .must .infos .all div{
+	float: left;
+	width: 23%;
+	height: 0.67rem;
+	background-color: #cfd4e3;
+	margin-right: 2%;
+	margin-top: 0.05rem;
+}
+.enter .must .infos .all img{
+	width: 100%;
+}
+.enter .yea{
+	display: block;
+	width: 65%;
+	margin: 0.5rem auto;
+	color: #FFF;
+	background-color: #F64CA2;
+	font-size: 0.16rem;
+	padding: 0.06rem 0;
+	border: 0;
+	border-radius: 5px;
+	outline: none;
+	display: none;
 }
 
 /*-----------档案-------------*/
@@ -307,9 +410,10 @@ h4{
 	position: absolute;
 	right: 5px;
 	top: 10px;
+	z-index: 1000;
 	background-color: #fff;
 	-webkit-box-shadow: 5px 5px 3px #b1b0b0;
-	        box-shadow: 5px 5px 3px #b1b0b0;
+	box-shadow: 5px 5px 3px #b1b0b0;
 	padding-left: 5px;
 	border-radius: 5px;
 	display: none;
@@ -441,7 +545,6 @@ h4{
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 5% 0.15rem;
-	border-bottom: 5px solid #ccc;
 }
 .tool p{
 	font-size: 0.18rem;
@@ -646,6 +749,10 @@ h4{
     border-radius: 5px;
     background-color: #ccc;
 }
+.czjl{
+	width: 50%;
+	margin-left: 10%;
+}
 
 /*病历不能丢*/
 .Assessment{
@@ -713,7 +820,7 @@ h4{
 	background-color: #cfd4e3;
 	margin-right: 3%;
 	-webkit-box-shadow: 5px 5px 5px #ccc;
-	        box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
 }
 .ill-list .one .zi img{
 	width: 100%;
@@ -800,12 +907,12 @@ h4{
 }
 .me{
 	width: 100%;
+	padding: 0 5%;
 	border-bottom: 1px solid #ccc;
 }
 .me p{
 	color: #FF679A;
 	font-size: 0.15rem;
-	width: 92%;
 	margin: 0.05rem auto;
 	position: relative;
 }
@@ -819,51 +926,39 @@ h4{
 	top: 0;
 	font-size: 0.1rem;
 }
+.me .info span{
+	color: #CF24AA;
+}
+.me .info .all{
+	margin-bottom: 0.15rem;
+}
+.me .info .all{
+	overflow: hidden;
+}
+.me .info .all div{
+	float: left;
+	width: 23%;
+	height: 0.67rem;
+	background-color: #cfd4e3;
+	margin-right: 2%;
+	margin-top: 0.05rem;
+}
+.me .info .all img{
+	width: 100%;
+}
 .me .info{
-	width: 85%;
-	margin: 0 auto 0.3rem;
 	display: none;
 }
-.me .height,.me .weight{
-	width: 0.5rem;
-	height: 0.25rem;
-	border: 1px solid #333;
-	border-width: 0 0 1px 0;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
-	border-radius: 0;
-	outline: none;
-	text-align: center;
-	margin-top: 0.1rem;
-}
-.me .info .ye,.mo,.da{
-	padding: 0.01rem 0;
-	-webkit-appearance:none;
-	-moz-appearance:none;
-	appearance:none;
-	border: none;
-	outline: none;
-	width: 0.43rem;
-    border-radius: 5px;
-    background-color: #ccc;
-}
-.first-a,.first-b{
-	width: 70%;
-	margin: 0 auto;
-	display: block;
-}
-.first-a{
-	margin-bottom: 0.5rem;
-}
-.first-aa{
-	width: 40%;
-	margin-bottom: 0.5rem;
-}
-.first-c{
+.bl_a{
 	width: 60%;
 	margin-left: 10%;
 }
+.bl_b{
+	width: 80%;
+	display: block;
+	margin: 0.7rem auto 0;
+}
+
 /*-------过敏源标记------------*/
 .yuan{
 	width: 100%;
@@ -1034,4 +1129,120 @@ h4{
 }
 .page img{
 	width: 60%;
+}
+.gmy{
+	width: 40%;
+	margin-left: 5%;
+}
+.gmys{
+	display: block;
+	margin: 0.7rem auto 0;
+	width: 70%;
+}
+
+/*历史随访记录查看*/
+header .close{
+	position: absolute;
+	right: 3%;
+	top: 2%;
+}
+.wrap{
+	width: 100;
+	padding: 5%;
+	background-color: #fff;
+}
+.wrap h4{
+	text-align: left;
+	color: #EE4F75;
+	margin-bottom: 0.1rem;
+}
+.wrap .margin{
+	margin-bottom: 0.25rem;
+}
+.wrap .select .btm{
+	margin-bottom: 0.2rem;
+}
+.wrap .red{
+	color: #FE0097;
+}
+.wrap .select span{
+	display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.03rem;
+    border-radius: 0.05rem;
+}
+.wrap .select input[type="text"]{
+	width: 1.8rem;
+    height: 0.18rem;
+    border: 1px solid #333;
+    outline: none;
+    border-width: 0 0 1px 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.wrap .select .or{
+	margin-top: 0.1rem;
+}
+.wrap .record .warn{
+	color: #EE4F75;
+	margin: 0.1rem 0;
+}
+.wrap .record .yes{
+	margin-bottom: 0.1rem;
+}
+.wrap .infos span{
+	color: #CF24AA;
+}
+.wrap .infos .all{
+	margin-bottom: 0.15rem;
+}
+.wrap .infos .all{
+	overflow: hidden;
+}
+.wrap .infos .all div{
+	float: left;
+	width: 23%;
+	height: 0.67rem;
+	background-color: #cfd4e3;
+	margin-right: 2%;
+	margin-top: 0.05rem;
+}
+.wrap .infos .all img{
+	width: 100%;
+}
+.wrap .select label{
+	display: inline-block;
+	width: .17rem;
+	height: .17rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/radio-a.png);
+	background-size: cover;
+}
+.wrap .select input[type="radio"]:checked+label{
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
+}
+.wrap .select input[type="radio"],input[type="checkbox"]{
+	opacity: 0;
+}
+.wrap .select input[type="checkbox"]:checked+label{
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
+}
+.wrap .record input[type="radio"]{
+	opacity: 0;
+}
+.wrap .record label{
+	display: inline-block;
+	width: .2rem;
+	height: .2rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/fu.png);
+	background-size: cover;
+}
+.wrap .record input[type="radio"]:checked+label{
+	background-image: url(../images/fuu.png);
+	background-size: cover;
 }
