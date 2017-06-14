@@ -5,7 +5,6 @@
 .z_photo{
 	padding: 0.05rem;
 	border:1px solid #E7E6E6;
-	/*padding: 18px;*/
 }
 .z_photo .z_file{
 	position: relative;
@@ -16,9 +15,8 @@
 	opacity: 0;
 	position: absolute;
 	top: 0px;
-	/*left: 0px;*/
 	z-index: 100;
-	right: -2.1rem;
+	left: 0;
 }
 .z_photo .up-section{
 	position: relative;
@@ -71,6 +69,8 @@
     width: 23%;
     height: 0.67rem;
     float: left;
+    margin-left: 25%;
+    margin-right: -0.6rem;
 }
 .img-box .upimg-div .z_file {
     width: 23%;
@@ -78,11 +78,10 @@
 }
 .z_file .add-img,.add-imgs,.add-imgss {
     display: block;
-   /* width: 23%;*/
     height: 0.67rem;
     position: absolute;
-    right: -2.1rem;
     top: 0;
+    left: 0;
 }
 /*遮罩层样式*/
 .mask{
@@ -129,12 +128,3 @@
 .check-p .del-com{
 	border-right: 1px solid #D1D1D1;
 }
-
-
-
-
-
-
-
-
-
