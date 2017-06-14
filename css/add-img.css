@@ -10,7 +10,7 @@
 .z_photo .z_file{
 	position: relative;
 }
-.z_file  .file{
+.z_file  .file,.files,.filess {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
@@ -76,7 +76,7 @@
     width: 23%;
     height: 0.67rem;
 }
-.z_file .add-img {
+.z_file .add-img,.add-imgs,.add-imgss {
     display: block;
    /* width: 23%;*/
     height: 0.67rem;
