@@ -51,7 +51,7 @@ $(function(){
 
 	$('.yao .tit').click(function(){
 		$('.yao .add').css('backgroundColor','#E557D1');
-		$('.yao add').text('保 存');
+		$('.yao .add').text('保 存');
 		$('.yao .infos').css('display','block');
 	})
 
@@ -148,6 +148,16 @@ $(function(){
 		$('.enter .yea').css('display','none');
 		$('.enter .ye').css('display','block');
 	})
+
+	// 开关
+	$('.mess li .ok').css({'color':'#FFF','backgroundColor':'#FF679A'});
+	$('.mess li .ok').click(function(){
+		$(this).css({'color':'#FFF','backgroundColor':'#FF679A'}).siblings().css({'color':'#333','backgroundColor':'#E6E6E6'});
+	})
+	$('.mess li .no').click(function(){
+		$(this).css({'color':'#FFF','backgroundColor':'#FF679A'}).siblings().css({'color':'#333','backgroundColor':'#E6E6E6'});
+	})
+
 })
 
 

@@ -981,12 +981,23 @@ h4{
 .yuan .img img{
 	width: 100%;
 }
-.mui-switch .mui-active {
-    border-color: red;
-    background-color: red;
-}
 .mui-switch{
 	height: 25px;
+}
+.mess li input{
+	opacity: 0;
+	margin-left: 0.1rem;
+}
+.mess li label{
+	display: inline-block;
+	width: .17rem;
+	height: .17rem;
+	background-image: url(../images/fou.png);
+	background-size: cover;
+}
+.mess li input:checked+label{
+	background-image: url(../images/shi.png);
+	background-size: cover;
 }
 .lu{
 	width: 100%;
