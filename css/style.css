@@ -203,10 +203,9 @@ h4{
 }
 .progress .num .on,.num .two,.num .end{
 	padding-left: 0.15rem;
-	font-family: STXingkai;
 }
 .progress .num .two{
-	padding-left: 0.25rem;
+	padding-left: 0.2rem;
 }
 .progress .text div{
 	padding-top: 0.05rem;
