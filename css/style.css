@@ -203,9 +203,10 @@ h4{
 }
 .progress .num .on,.num .two,.num .end{
 	padding-left: 0.15rem;
+	font-family: STXingkai;
 }
 .progress .num .two{
-	padding-left: 0.2rem;
+	padding-left: 0.25rem;
 }
 .progress .text div{
 	padding-top: 0.05rem;
@@ -299,19 +300,19 @@ h4{
 	width: .17rem;
 	height: .17rem;
 	vertical-align: -0.03rem;
-	background: url(../images/radio-a.png) no-repeat;
-	background-size: 100%;
+	background-image: url(../images/radio-a.png);
+	background-size: cover;
 }
 .find .lun .select input[type="radio"]:checked+label{
-	background: url(../images/radio-b.png) no-repeat;
-	background-size: 100%;
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
 }
 .find .lun .select input[type="radio"],input[type="checkbox"]{
 	opacity: 0;
 }
 .find .lun .select input[type="checkbox"]:checked+label{
-	background: url(../images/radio-b.png) no-repeat;
-	background-size: 100%;
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
 }
 .find .next-a,.next-end{
 	display: block;
