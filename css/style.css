@@ -299,19 +299,19 @@ h4{
 	width: .17rem;
 	height: .17rem;
 	vertical-align: -0.03rem;
-	background-image: url(../images/radio-a.png);
-	background-size: cover;
+	background: url(../images/radio-a.png) no-repeat;
+	background-size: 100%;
 }
 .find .lun .select input[type="radio"]:checked+label{
-	background-image: url(../images/radio-b.png);
-	background-size: cover;
+	background: url(../images/radio-b.png) no-repeat;
+	background-size: 100%;
 }
 .find .lun .select input[type="radio"],input[type="checkbox"]{
 	opacity: 0;
 }
 .find .lun .select input[type="checkbox"]:checked+label{
-	background-image: url(../images/radio-b.png);
-	background-size: cover;
+	background: url(../images/radio-b.png) no-repeat;
+	background-size: 100%;
 }
 .find .next-a,.next-end{
 	display: block;
