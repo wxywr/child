@@ -173,7 +173,7 @@ h4{
 	outline: none;
 }
 #height select{
-	padding: 0.01rem 0;
+	padding: 0.02rem 0;
 	-webkit-appearance:none;
 	-moz-appearance:none;
 	appearance:none;
@@ -1070,7 +1070,7 @@ h4{
 	margin-left: 0.2rem;
 }
 .lu .info .nian,.yue,.ri{
-	padding: 0;
+	padding: 0.02rem 0;
 	width: 0.45rem;
     border-radius: 5px;
     background-color: #ccc;
@@ -1165,7 +1165,7 @@ h4{
 	margin-left: 0.2rem;
 }
 .add-min .info .nian,.yue,.ri{
-	padding: 0;
+	padding: 0.02rem 0;
 	width: 0.45rem;
     border-radius: 5px;
     background-color: #ccc;
