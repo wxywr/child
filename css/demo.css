@@ -25,11 +25,11 @@ h2 {
 	margin: 0.3rem 0; 
 }
 main {
-	width: 30%;
+	width: 20%;
 	max-width: 1000px;
-	margin: 4em auto;
+	margin: 0 auto;
 	opacity: 0;
-	margin-top: 50%; 
+	padding-top: 50%; 
 }
 main.loaded {transition: opacity .25s linear;opacity: 1; }
 main header {width: 100%; }
