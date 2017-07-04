@@ -7,6 +7,7 @@
 	<title>第4次随访</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/add-img.css" type="text/css">
+	<link rel="stylesheet" href="css/lCalendar.css">
 </head>
 <body>
 	<header>第4次随访</header>
@@ -28,10 +29,8 @@
 			<form action="" id="height" method="post">
 				<p>身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高 : <input type="text" class="tall hw" name="height" placeholder="请输入数字">cm</p>
 				<p>体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重 : <input type="text" class="fat hw" name="weight" placeholder="请输入数字">kg</p>
-				<p>出生年月：
-					<select name="year1" class="y"></select>年
-					<select name="month1" class="m"></select>月
-					<select name="day1" class="d"></select>日
+				<p>出生年月 :
+					<input id="demo1" type="text" readonly="" name="input_date" placeholder="请选择日期" data-lcalendar="2010-01-1,2019-12-31" />
 				</p>
 				<button class="next">下一步</button>
 			</form> 
@@ -284,17 +283,21 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
-<script type="text/javascript" src="js/YMDClass.js"></script>
 <script src="js/imgUp.js"></script>
+<script src="js/lCalendar.js"></script>
 <script>
-	new YMDselect('year1','month1','day1');
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	});
 	
 	var hw = document.getElementsByClassName('hw');
 	for(var i=0;i<hw.length;i++){
 	//限制只能输入数字和小数点
-	hw[i].onfocus = hw[i].onblur = hw[i].onkeyup = function(){
-         this.value = this.value.replace(/[^\d.]/g,'');
-    }
-}
+		hw[i].onfocus = hw[i].onblur = hw[i].onkeyup = function(){
+	         this.value = this.value.replace(/[^\d.]/g,'');
+	    }
+	}
 </script>
 </html>

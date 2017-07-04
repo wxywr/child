@@ -1,8 +1,8 @@
-SYT="请选择";
+SYT="2017";
 SMT="请选择";
 SDT="请选择";
-BYN=10;//年份范围往前50年
-AYN=3;//年份范围往后0年
+BYN=15;//年份范围往前15年
+AYN=0;//年份范围往后0年
 function YMDselect(){
 	this.SelY=document.getElementsByName(arguments[0])[0];
 	this.SelM=document.getElementsByName(arguments[1])[0];

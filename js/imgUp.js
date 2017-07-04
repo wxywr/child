@@ -54,7 +54,7 @@ $(function(){
 		 },450);
 		 numUp = imgContainer.find(".up-section").length;
 		if(numUp >= 3){
-			// $(this).parent().hide();
+			$(this).hide();
 			$('.add-img').attr('src','images/chuan.png');
 		}
 		//input内容清空
@@ -113,6 +113,7 @@ $(function(){
 		 numUp = imgContainer.find(".up-section").length;
 		if(numUp >= 3){
 			// $(this).parent().hide();
+			$(this).hide();
 			$('.add-imgs').attr('src','images/chuan.png');
 		}
 		//input内容清空
@@ -170,6 +171,7 @@ $(function(){
 		 numUp = imgContainer.find(".up-section").length;
 		if(numUp >= 3){
 			// $(this).parent().hide();
+			$(this).hide();
 			$('.add-imgss').attr('src','images/chuan.png');
 		}
 		//input内容清空

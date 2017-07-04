@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+	<meta name="applicable-device" content="mobile">
+	<title>第4次随访</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/add-img.css" type="text/css">
+	<link rel="stylesheet" href="css/lCalendar.css" type="text/css">
+</head>
+<body>
+	<header>第4次随访</header>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a>
+	<div class="progress">
+		<div class="num">
+			<div class="on same">1</div>
+			<div class="two same">2</div>
+			<div class="end same">3</div>
+		</div>
+		<div class="text">
+			<div class="on same">身高体重</div>
+			<div class="two same">寻找过敏源</div>
+			<div class="end same">随访录入</div>
+		</div>
+	</div>
+	<div class="change">
+		<div class="shen block">
+			<h4>第一步 : 身高体重</h4>
+			<form action="" id="height" method="post">
+				<p>身&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高 : <input type="text" class="tall hw" name="height" placeholder="请输入数字">cm</p>
+				<p>体&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重 : <input type="text" class="fat hw" name="weight" placeholder="请输入数字">kg</p>
+				<p>出生年月：<!-- <input id="date"> --><input id="demo1" type="text" readonly="" name="input_date" placeholder="请选择日期" data-lcalendar="2011-01-1,2019-12-31" /></p>
+			</form> 
+			<button class="next tep">下一步</button>
+			<!-- <div class="please">请填写完整 !</div> -->
+		</div>
+		<div class="find block none">
+			<h4>第二部:回答选项寻找过敏源</h4>
+			<div class="paginations">
+				<div class="on-off">
+					<div class="select">
+						<div class="tit"><span>NO.1</span> 小儿年龄是多少?</div>
+						<div class="or"><input type="radio" name="aa"><label for=""></label> A. 0~6个月</div>
+						<div class="or"><input type="radio" name="aa"><label for=""></label> B. 6月~12月</div>
+						<div class="or"><input type="radio" name="aa"><label for=""></label> C. 12月~3岁</div>
+						<div class="what"><img src="images/wen.png" alt="">解析</div>
+						<div class="ins"><img src="images/off.png" alt=""><p class="txt">(文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字)</p></div>
+					</div>
+					<div class="select hidden">
+						<div class="tit"><span>NO.2</span> 家庭有哪些成员过敏?</div>
+						<div class="or"><input type="radio" name="bb"><label for=""></label> A. 父亲</div>
+						<div class="or"><input type="radio" name="bb"><label for=""></label> B. 母亲</div>
+						<div class="or"><input type="radio" name="bb"><label for=""></label> C. 其他人（外祖父母、祖父母等）</div>
+						<div class="what"><img src="images/wen.png" alt="">解析</div>
+						<div class="ins"><img src="images/off.png" alt=""><p class="txt">(文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字)</p></div>
+					</div>
+					<div class="select hidden">
+						<div class="tit"><span>NO.3</span> 患儿目前的饮食（主食）是什么?</div>
+						<div class="or"><input type="radio" name="cc"><label for=""></label> A. 配方奶粉</div>
+						<div class="or"><input type="radio" name="cc"><label for=""></label> B. 母乳</div>
+						<div class="or"><input type="radio" name="cc"><label for=""></label> C. 其他（如米饭、豆奶、羊奶等）</div>
+						<div class="what"><img src="images/wen.png" alt="">解析</div>
+						<div class="ins"><img src="images/off.png" alt=""><p class="txt">(文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字)</p></div>
+					</div>
+					<div class="select hidden">
+						<div class="tit"><span>NO.4</span> 家庭成员过敏内容: <input type="text" class="family">(无家庭过敏情况的略过)</div>
+						<div class="what"><img src="images/wen.png" alt="">解析</div>
+						<div class="ins"><img src="images/off.png" alt=""><p class="txt">(文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字)</p></div>
+					</div>
+				</div>
+				<button class="pre">上一题</button>
+				<button class="nex">下一题</button>
+				<button class="done tep">完成</button>
+			</div>
+		</div>
+		<div class="enter block none">
+			<div class="tit">根据实际情况进行选择（二选一）</div>
+			<div class="good"><input type="radio" name="sh"><label for=""></label>上次随访至今，宝宝一直都很健康</div>
+			<div class="bad"><input type="radio" name="sh"><label for=""></label>上次随访至今，宝宝有出现过就诊状况，我得记录</div>
+			<div class="must">
+				<p class="warn">(请拍照,添加宝宝最近一次的病历资料,各项最多保存三张)</p>
+				<div class="infos">
+					<div class="check">
+						<p>检查资料上传<span>(检查、化验、报告单)</span></p>
+				        <div class="check-list all">
+							<p class="jia">添加图片</p>
+							<input type="file" name="file" id="file" accept="image/*" onchange="picture()"> 
+							<img src="" id='show' onclick="big()" style="width: 50%;">
+						</div>
+					</div>
+					<div class="zhen">
+						<p>诊断资料上传<span>(医生书写的病历)</span></p>
+						<div class="zhen-list all">
+							<p class="jia">添加图片</p>
+							<input type="file" name="file" id="files" accept="image/*" onchange="pictures()"> 
+							<img src="" id='shows' onclick="bigs()" style="width: 50%">
+						</div>
+					</div>
+					<div class="zhi">
+						<p>治疗资料上传<span>(处方、药品照片)</span></p>
+						<div class="zhi-list all">
+							<p class="jia">添加图片</p>
+							<input type="file" name="file" id="filess" accept="image/*" onchange="picturess()"> 
+							<img src="" id='showss' onclick="bigss()" style="width: 50%">
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="finish ye">完成</button>
+			<button class="finish yea">完成</button>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/child.js"></script>
+<!-- <script src="js/upload.js"></script> -->
+<!-- <script src="js/datePicker.js"></script> -->
+<script type="text/javascript" src="js/lCalendar.js"></script>
+<script>
+	// var calendar = new datePicker();
+	// calendar.init({
+	// 	'trigger': '#date', /*按钮选择器，用于触发弹出插件*/
+	// 	'type': 'date',/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+	// 	'minDate':'1900-1-1',/*最小日期*/
+	// 	'maxDate':'2100-12-31',/*最大日期*/
+	// 	'onSubmit':function(){/*确认时触发事件*/
+	// 		var theSelectData=calendar.value;
+	// 	},
+	// 	'onClose':function(){/*取消时触发事件*/
+	// 	}
+	// });
+	var calendar = new lCalendar();
+		calendar.init({
+			'trigger': '#demo1',
+			'type': 'date'
+	});
+
+	var hw = document.getElementsByClassName('hw');
+	for(var i=0;i<hw.length;i++){
+	//限制只能输入数字和小数点
+		hw[i].onfocus = hw[i].onblur = hw[i].onkeyup = function(){
+		     this.value = this.value.replace(/[^\d.]/g,'');
+		}
+	};
+
+	//详情解析
+	var ins = document.querySelectorAll('.paginations .ins');
+	var what = document.querySelectorAll('.paginations .what');
+	for(var i=0;i<what.length;i++){
+		what[i].onclick=function(){
+			for(var j=0;j<ins.length;j++){
+				what[j].style.display='none';
+				ins[j].style.display='block';
+			}
+		}
+	};
+	for(var j=0;j<ins.length;j++){
+		ins[j].onclick=function(){
+			for(var i=0;i<what.length;i++){
+				ins[i].style.display='none';
+				what[i].style.display='block';
+			}
+		}
+	};
+</script>
+</html>

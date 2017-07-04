@@ -8,11 +8,13 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" href="css/mui.css" type="text/css">	
 	<link rel="stylesheet" href="css/mui.min.css" type="text/css">
+	<link rel="stylesheet" href="css/lCalendar.css">
 </head>
 <body style="background-color: #fff;">
 	<header>过敏源标记</header>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a>
 	<div class="yuan">
-		<p class="baby">宝宝的过敏源</p>
+		<p class="baby">宝宝的过敏源<span class="tj">添加</span></p>
 		<div class="img">
 			<div><img src="images/hui.png" alt=""><p>尘螨</p></div>
 			<div><img src="images/dog.png" alt=""><p>猫狗皮毛</p></div>
@@ -31,20 +33,20 @@
                 <ul class="one mess">
                 	<li>2016.12.08</li>
                 	<li>尘螨</li>
-                	<!-- <li> --><!-- <div class="mui-switch mui-switch-blue"><div class="mui-switch-handle"></div></div> --><!-- </li> -->
-                	<li><input type="checkbox"><label for=""></label></li>
+                	<li><div class="mui-switch mui-switch-blue"><div class="mui-switch-handle"></div></div></li>
+                	<!-- <li><input type="checkbox" class="box-a"><label for="" class="label-a"></label></li> -->
                 </ul>
                <ul class="three mess">
                 	<li>2016.10.01</li>
                 	<li>牛奶</li>
-                	<li><input type="checkbox"><label for=""></label></li>
-                	<!-- <li> --><!-- <div class="mui-switch mui-active mui-switch-blue"><div class="mui-switch-handle"></div></div> --><!-- </li> -->
+                	<!-- <li><input type="checkbox" class="box-b"><label for="" class="label-b"></label></li> -->
+                	<li><div class="mui-switch mui-active mui-switch-blue"><div class="mui-switch-handle"></div></div> </li>
                 </ul>
                  <ul class="three mess">
                 	<li>2016.5.01</li>
                 	<li>猫狗皮毛</li>
-                	<li><input type="checkbox"><label for=""></label></li>
-                	<!-- <li> --><!-- <div class="mui-switch mui-active mui-switch-blue"><div class="mui-switch-handle"></div></div> --><!-- </li> -->
+                	<!-- <li><input type="checkbox" class="box-c"><label for="" class="label-c"></label></li> -->
+                	<li><div class="mui-switch mui-active mui-switch-blue"><div class="mui-switch-handle"></div></div></li>
                 </ul>
             </div>
         </li>
@@ -53,12 +55,10 @@
 		<p><span class="want">我要记录</span><span class="add">+ 新增</span></p>
 		<div class="info">
 			<div>发现时间 :
-				<select name="year1" class="nian"></select>年
-				<select name="month1" class="yue"></select>月
-				<select name="day1" class="ri"></select>日
+				<input id="demo1" type="text" readonly="" name="input_date" data-lcalendar="2011-01-1,2019-12-31" style="width: 1.8rem;height:0.25rem;border:1px solid #333;border-width: 0 0 1px 0;text-align: center;-webkit-appearance: none;border-radius: 0;" />
 			</div>
 			<div>过敏源 :<input type="text" class="min" name=""></div>
-			<div class="select">是否过敏 : <input type="checkbox" class="kai"><label for=""></label></div>
+			<div class="select">是否过敏 : <div class="mui-switch mui-active mui-switch-blue" style="position: absolute;right: 8%;top: -0.05rem;"><div class="mui-switch-handle"></div></div> <!-- <input type="checkbox" class="kai"><label for="" class="kais"></label> --></div>
 		</div>
 	</div>
 </body>
@@ -66,8 +66,12 @@
 <script type="text/javascript" src="js/child.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
 <script type="text/javascript" src="js/mui/mui.js"></script>
-<script type="text/javascript" src="js/YMDClass.js"></script>
+<script type="text/javascript" src="js/lCalendar.js"></script>
 <script>
-	new YMDselect('year1','month1','day1');
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	});
 </script>
 </html>

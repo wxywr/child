@@ -6,6 +6,7 @@
 	<meta name="applicable-device" content="mobile">
 	<title>小儿随访</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/lCalendar.css">
 </head>
 <body>
 	<header>创建小儿档案</header>
@@ -20,9 +21,7 @@
 			<li><input type="text" class="name" name="name" value="" placeholder="请输入姓名"></li>
 			<li class="people"><input type="radio" id="man" name="sexs" value="male" class="sex"><label for="man" class="label-a"></label> 男
 			<input type="radio" id="woman" name="sexs" value="female" class="sex" checked=""><label for="woman" class="label-b"></label> 女</li>
-			<li><input type="text" name="year" class="year amount" value="">年
-			<input type="text" name="month" class="month amount" value="">月
-			<input type="text" name="day" class="day amount" value="">日</li>
+			<li><input id="demo1" class="xuan" type="text" readonly="" name="input_date" placeholder="请选择日期" data-lcalendar="2010-01-1,2020-12-31" style="width: 80%;border:1px solid #FF679A;border-width: 0 0 1px 0;" /></li>
 		</ul>
 	</form>
 	<div class="care"><a href="javascript:;" class="btn">开 始 呵 护</a></div>
@@ -30,7 +29,14 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
+<script src="js/lCalendar.js"></script>
 <script>
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	});
+
 	(function(){
         var form = document.getElementById('form');
         var input = form.getElementsByClassName('amount');

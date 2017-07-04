@@ -159,17 +159,18 @@ h4{
 	width: 60%;
 	-webkit-appearance: none;
 	border-radius: 0;
+	font-size: 0.15rem;
 }
-#height .next{
+.shen .next{
 	display: block;
-	width: 80%;
+	width: 65%;
 	margin: 1rem auto 0;
 	color: #FFF;
 	background-color: #F64CA2;
 	font-size: 0.16rem;
 	padding: 0.06rem 0;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0.05rem;
 	outline: none;
 }
 #height select{
@@ -192,7 +193,7 @@ h4{
 } 
 .progress .num div,.text div{
 	float: left;
-	font-size: 0.1rem;
+	font-size: 0.12rem;
 	text-align: left;
 } 
 .progress .on,.two{
@@ -202,10 +203,10 @@ h4{
 	color: #FF329A;
 }
 .progress .num .on,.num .two,.num .end{
-	padding-left: 0.15rem;
+	padding-left: 0.2rem;
 }
 .progress .num .two{
-	padding-left: 0.2rem;
+	padding-left: 0.27rem;
 }
 .progress .text div{
 	padding-top: 0.05rem;
@@ -225,6 +226,7 @@ h4{
 	text-align: center;
 	padding: 0.03rem;
 	border-radius: 0.05rem;
+	font-size: 0.1rem;
 }
 .change .select .tit{
 	font-weight: bold;
@@ -275,7 +277,7 @@ h4{
 	font-size: 0.16rem;
 	padding: 0.06rem 0;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0.05rem;
 	outline: none;
 }
 .please{
@@ -418,7 +420,7 @@ h4{
 	font-size: 0.16rem;
 	padding: 0.06rem 0;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0.05rem;
 	outline: none;
 	display: none;
 }
@@ -462,12 +464,12 @@ h4{
 	display: none;
 }
 .ever .alert p{
-	font-size: 0.06rem;
+	font-size: 0.16rem;
 	margin-bottom: 0.05rem;
 }
 .ever .alert .news,.edit{
 	color: #0099FF;
-	font-size: 0.13rem;
+	font-size: 0.16rem;
 	border-top: 1px solid #ccc;
 	margin: 0.05rem 0;
 }
@@ -496,7 +498,7 @@ h4{
 }
 .ever .right{
 	width: 40%;
-	margin-top: 0.15rem;
+	margin-top: 0.1rem;
 	text-align: left;
 }
 .ever .left .ci{
@@ -504,12 +506,12 @@ h4{
 	color: #FF009A;
 }
 .ever .left p{
-	font-size: 0.08rem;
+	font-size: 0.12rem;
 	color:#333;
 	font-weight: bold;
 }
 .ever .right .shang,.grow,.months{
-	font-size: 0.1rem;
+	font-size: 0.14rem;
 }
 .ever .right p.date{
 	font-size: 0.2rem;
@@ -579,7 +581,7 @@ h4{
 	margin: 0 auto;
 	padding: 0 5% 0.15rem;
 }
-.tool p{
+.tool .xiao{
 	font-size: 0.18rem;
 	margin: 0.1rem 0 0.2rem;
 }
@@ -595,7 +597,10 @@ h4{
 	width: 50%;
 	margin-left: 30%;
 }
-
+.tool .tools p{
+	text-align: center;
+	margin-top: 0.1rem;
+}
 
 /*成长记录*/
 .line{
@@ -641,18 +646,24 @@ h4{
 	top: 0;
 }
 .ido .info{
-	width: 85%;
+	width: 80%;
 	margin: 0 auto;
 	display: none;
 }
+.ido .height{
+	margin-top: 0.1rem;
+}
 .ido .height,.ido .weight{
-	width: 0.5rem;
+	width: 1.8rem;
 	height: 0.25rem;
 	border: 1px solid #333;
 	border-width: 0 0 1px 0;
 	-webkit-appearance: none;
 	border-radius: 0;
 	outline: none;
+	margin-left: 0.05rem;
+	font-size: 0.15rem;
+	text-align: center;
 }
 .ido .info .ye,.mo,.da{
 	padding: 0.02rem 0;
@@ -674,10 +685,11 @@ h4{
 .mui-table-view .mess{
 	overflow: hidden;
 	position: relative;
+	margin-top: 0.1rem;
 }
 .mui-table-view .mess li{
 	float: left;
-	font-size: 0.13rem;
+	font-size: 0.15rem;
 	color: #333;
 	width: 33%;
 	text-align: left;
@@ -700,6 +712,7 @@ h4{
 }
 .lsjl p{
 	position: relative;
+	font-size: 0.15rem;
 }
 .lsjl p span{
 	display: inline-block;
@@ -723,11 +736,11 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.025rem;
+	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 0.1rem;
+	font-size: 0.12rem;
 }
 .quline{
 	width: 100%;
@@ -744,7 +757,6 @@ h4{
 .quline .cmkg div{
 	width: 20%;
 	text-align: center;
-	border: 1px solid #ccc;
 	font-size: 0.1rem;
 	padding: 0.02rem 0.03rem;
 	color: #fff;
@@ -756,12 +768,12 @@ h4{
 	margin: 0.5rem auto;
 }
 .do .info{
-	width: 85%;
+	width: 80%;
 	margin: 0 auto 0.3rem;
 	display: none;
 }
 .do .height,.do .weight{
-	width: 0.5rem;
+	width: 1.8rem;
 	height: 0.25rem;
 	border: 1px solid #333;
 	border-width: 0 0 1px 0;
@@ -770,6 +782,8 @@ h4{
 	outline: none;
 	text-align: center;
 	margin-top: 0.1rem;
+	font-size: 0.15rem;
+	margin-left: 0.05rem;
 }
 .do .info .ye,.mo,.da{
     padding: 0.02rem 0;
@@ -783,7 +797,7 @@ h4{
     background-color: #ccc;
 }
 .czjl{
-	width: 50%;
+	width: 70%;
 	margin-left: 10%;
 }
 
@@ -834,6 +848,7 @@ h4{
 	color: #FF339A;
 	padding: 0.05rem 0 0.04rem 0.05rem;
 	border-bottom: 1px solid #ccc;
+	font-size: 0.17rem;
 }
 .ill-list .one{
 	border-bottom: 1px solid #ccc;
@@ -841,7 +856,10 @@ h4{
 }
 .ill-list .one .document{
 	margin-top: 0.05rem;
-	font-size: 0.12rem;
+	font-size: 0.14rem;
+}
+.ill-list .one .times{
+	font-size: 0.15rem;
 }
 .ill-list .one .zi{
 	overflow: hidden;
@@ -866,21 +884,24 @@ h4{
 	color: #FF339A;
 	margin: 0.1rem 0;
 	position: relative;
+	font-size: 0.17rem;
 }
 .yao .add{
 	display: inline-block;
     background-color: #FF679A;
     color: #fff;
-    padding: 0.025rem;
+    padding: 0.03rem 0.05rem;
     position: absolute;
     right: 0;
-    top: 0;
+    top: -0.03rem;
+    font-size: 0.14rem;
 }
 .yao .infos span{
 	color: #CF24AA;
 }
 .yao .infos .all{
 	margin-bottom: 0.15rem;
+	position: relative;
 }
 .yao .infos .all{
 	overflow: hidden;
@@ -899,6 +920,40 @@ h4{
 .yao .infos{
 	display: none;
 }
+#file,#files,#filess{
+	display: block;
+	width: 20%;
+	height: 0.2rem;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.yao .infos .jia{
+	width: 20%;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	background-color: #E6E6E6;
+	text-align: center;
+	color: #333;
+	font-size: 0.12rem;
+	margin: 0.05rem 0;
+}
+.must .infos .jia{
+	width: 20%;
+	height: 0.2rem;
+	line-height: 0.2rem;
+	background-color: #E6E6E6;
+	text-align: center;
+	color: #333;
+	font-size: 0.12rem;
+	margin: 0.05rem 0;
+}
+.must .infos .all{
+	margin-bottom: 0.15rem;
+	position: relative;
+}
+
 /*-----病历空白------*/
 .Assessments{
 	width: 100%;
@@ -953,7 +1008,7 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.025rem;
+	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1001,6 +1056,16 @@ h4{
 .yuan p.baby{
 	color: #FF679A;
 	font-size: 0.17rem;
+	position: relative;
+}
+.yuan .baby .tj{
+	background-color: #CC0032;
+	font-size: 0.14rem;
+	color: #fff;
+	padding: 0.01rem 0.05rem;
+	position: absolute;
+	right: 0;
+	top: 0; 
 }
 .yuan .img{
 	overflow: hidden;
@@ -1049,7 +1114,7 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.025rem;
+	padding: 0.03rem 0.05rem; 
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1067,7 +1132,9 @@ h4{
 	border-width: 0 0 1px 0;
 	-webkit-appearance: none;
 	border-radius: 0;
-	margin-left: 0.2rem;
+	margin-left: 0.17rem;
+	text-align: center;
+	font-size: 0.15rem;
 }
 .lu .info .nian,.yue,.ri{
 	padding: 0.02rem 0;
@@ -1131,7 +1198,7 @@ h4{
 }
 .add-min{
 	width: 100%;
-	padding: 0.05rem 5% 0;
+	padding: 0.03rem 5%;
 	border-bottom: 1px solid #ccc;
 }
 .add-min p{
@@ -1143,7 +1210,7 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.025rem;
+	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1162,7 +1229,9 @@ h4{
 	border-width: 0 0 1px 0;
 	-webkit-appearance: none;
 	border-radius: 0;
-	margin-left: 0.2rem;
+	margin-left: 0.16rem;
+	text-align: center;
+	font-size: 0.15rem;
 }
 .add-min .info .nian,.yue,.ri{
 	padding: 0.02rem 0;
@@ -1176,7 +1245,7 @@ h4{
 .add-min .info .mui-switch{
 	position: absolute;
 	top: 0;
-	right: 6%;
+	right: 2%;
 }
 .add-min .want{
 	font-size: 0.17rem;
@@ -1188,7 +1257,7 @@ h4{
 	top: 2%;
 }
 .page img{
-	width: 60%;
+	width: 50%;
 }
 .gmy{
 	width: 40%;
@@ -1205,6 +1274,7 @@ header .close{
 	position: absolute;
 	right: 3%;
 	top: 2%;
+	width: 8%;
 }
 .wrap{
 	width: 100;
@@ -1305,4 +1375,72 @@ header .close{
 .wrap .record input[type="radio"]:checked+label{
 	background-image: url(../images/fuu.png);
 	background-size: cover;
+}
+
+/*选项*/
+.nex,.pre{
+	display: inline-block;
+	width: 25%;
+	color: #FFF;
+    background-color: #F64CA2;
+    font-size: 0.16rem;
+    padding: 0.06rem 0;
+    outline: none;
+    border: 0;
+    margin-top: 0.5rem;
+    border-radius: 0.05rem;
+}
+.pre{
+	margin-left: 22%;
+	margin-right: 6%;
+}
+.done{
+	display: block;
+	width: 65%;
+    margin: 0.3rem auto 0;
+    color: #FFF;
+    background-color: #00CC99;
+    font-size: 0.16rem;
+    padding: 0.06rem 0;
+    border: 0;
+    border-radius: 0.05rem;
+    outline: none;
+    display: none;
+}
+.paginations .hidden{
+	display: none;
+}
+.paginations .select label{
+	display: inline-block;
+	width: .15rem;
+	height: .15rem;
+	vertical-align: -0.03rem;
+	background-image: url(../images/radio-a.png);
+	background-size: cover;
+}
+.paginations .select input:checked+label{
+	background-image: url(../images/radio-b.png);
+	background-size: cover;
+}
+.paginations .select input[type='radio'],input[type='checkbox']{
+	opacity: 0;
+}
+.paginations .select input[type='text']{
+	width: 1.8rem;
+	height: 0.18rem;
+	border: 1px solid #333;
+	outline: none;
+	border-width: 0 0 1px 0;
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-size: 0.12rem;
+}
+/*年月日*/
+#demo1{
+	border: 1px solid #333;
+	border-width: 0 0 1px 0;
+	text-align: center;
+	font-size: 0.15rem;
+	-webkit-appearance: none;
+	border-radius: 0;
 }

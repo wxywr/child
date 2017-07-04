@@ -10,6 +10,7 @@
 </head>
 <body>
 	<header>病历不能丢</header>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a>
 	<div class="Assessment">
 		<div class="illness">
 			<div class="ill-a ill">
@@ -54,78 +55,32 @@
 		<div class="infos">
 			<div class="check">
 				<p>检查资料上传<span>(检查、化验、报告单)</span></p>
-				<!-- <div class="check-list all">
-					<div></div>
-					<div></div>
-					<div></div>
-					<div><img src="images/chuan.png" alt=""></div>
-				</div> -->
-				<div class="img-box full">
-					<section class=" img-section">
-						<div class="z_photo upimg-div clear" >
-			               	 <section class="z_file fl">
-			               	 	<img src="images/add.png" class="add-img">
-			               	 	<input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
-			               	 </section>
-				         </div>
-					 </section>
+				<div class="check-list all">
+					<p class="jia">添加图片</p>
+					<input type="file" name="file" id="file" accept="image/*" onchange="picture()"> 
+					<img src="" id='show' onclick="big()" style="width: 50%;">
 				</div>
-		        <aside class="mask works-mask">
-					<div class="mask-content">
-						<p class="del-p">确定要删除图片吗？</p>
-						<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-					</div>
-				</aside>
 			</div>
 			<div class="zhen">
 				<p>诊断资料上传<span>(医生书写的病历)</span></p>
-				<!-- <div class="zhen-list all">
-					<div><img src="images/add.png" alt=""></div>
-				</div> -->
-				<div class="img-box full">
-					<section class=" img-section">
-						<div class="z_photo upimg-div clear" >
-			               	 <section class="z_file fl">
-			               	 	<img src="images/add.png" class="add-imgs">
-			               	 	<input type="file" name="file" id="files" class="files" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
-			               	 </section>
-				         </div>
-					 </section>
+				<div class="zhen-list all">
+					<p class="jia">添加图片</p>
+					<input type="file" name="file" id="files" accept="image/*" onchange="pictures()"> 
+					<img src="" id='shows' onclick="bigs()" style="width: 50%">
 				</div>
-		        <aside class="mask works-mask">
-					<div class="mask-content">
-						<p class="del-p">确定要删除图片吗？</p>
-						<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-					</div>
-				</aside>
 			</div>
 			<div class="zhi">
 				<p>治疗资料上传<span>(处方、药品照片)</span></p>
-				<!-- <div class="zhi-list all">
-					<div><img src="images/add.png" alt=""></div>
-				</div> -->
-				<div class="img-box full">
-					<section class=" img-section">
-						<div class="z_photo upimg-div clear" >
-			               	 <section class="z_file fl">
-			               	 	<img src="images/add.png" class="add-imgss">
-			               	 	<input type="file" name="file" id="filess" class="filess" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
-			               	 </section>
-				         </div>
-					 </section>
+				<div class="zhi-list all">
+					<p class="jia">添加图片</p>
+					<input type="file" name="file" id="filess" accept="image/*" onchange="picturess()"> 
+					<img src="" id='showss' onclick="bigss()" style="width: 50%">
 				</div>
-		        <aside class="mask works-mask">
-					<div class="mask-content">
-						<p class="del-p">确定要删除图片吗？</p>
-						<p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
-					</div>
-				</aside>
 			</div>
 		</div>
 	</div>
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="js/imgUp.js"></script>
+<script src="js/upload.js"></script>
 </html>

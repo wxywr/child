@@ -6,10 +6,11 @@
 	<meta name="applicable-device" content="mobile">
 	<title>成长记录空白</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/lCalendar.css">
 </head>
 <body>
 	<header>成长记录</header>
-	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a></div>
+	<a href="javascript:history.go(-1)" class="page"><img src="images/back.png" alt=""></a>
 	<div class="quline">
 		<p>成长曲线</p>
 		<div class="cmkg">
@@ -28,9 +29,7 @@
 		<p>我要记录<span class="add">+ 新增</span></p>
 		<div class="info">
 			<div>时间 :
-				<select name="year1" class="ye"></select>年
-				<select name="month1" class="mo"></select>月
-				<select name="day1" class="da"></select>日
+				<input id="demo1" type="text" readonly="" name="input_date" placeholder="请选择日期" data-lcalendar="2010-01-1,2020-12-31" style="width: 1.8rem;height: 0.25rem;" />
 			</div>
 			<div>身高 :<input type="text" class="height" name="tall">cm</div>
 			<div>体重 :<input type="text" class="weight" name="fat">kg</div>
@@ -40,8 +39,13 @@
 </body>
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="js/child.js"></script>
-<script type="text/javascript" src="js/YMDClass.js"></script>
+<script src="js/lCalendar.js"></script>
 <script>
-	new YMDselect('year1','month1','day1');
+	var calendar = new lCalendar();
+	calendar.init({
+		'trigger': '#demo1',
+		'type': 'date'
+	});
+	
 </script>
 </html>
