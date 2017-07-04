@@ -527,7 +527,7 @@ h4{
 	padding: 0.1rem 0 0.2rem 0;
 }
 .history p{
-	font-size: 0.18rem;
+	font-size: 0.15rem;
 }
 .history .time{
 	overflow: hidden;
@@ -582,7 +582,7 @@ h4{
 	padding: 0 5% 0.15rem;
 }
 .tool .xiao{
-	font-size: 0.18rem;
+	font-size: 0.15rem;
 	margin: 0.1rem 0 0.2rem;
 }
 .tool .tools{
@@ -1012,7 +1012,7 @@ h4{
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 0.1rem;
+	font-size: 0.12rem;
 }
 .me .info span{
 	color: #CF24AA;
@@ -1214,7 +1214,7 @@ h4{
 	position: absolute;
 	right: 0;
 	top: 0;
-	font-size: 0.1rem;
+	font-size: 0.12rem;
 }
 .add-min .info{
 	width: 86%;
@@ -1254,7 +1254,7 @@ h4{
 .page{
 	position: absolute;
 	left: 5%;
-	top: 2%;
+	top: 2.5%;
 }
 .page img{
 	width: 50%;
