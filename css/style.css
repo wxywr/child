@@ -643,7 +643,7 @@ h4{
 	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -0.03rem;
 }
 .ido .info{
 	width: 80%;
@@ -893,7 +893,7 @@ h4{
     padding: 0.03rem 0.05rem;
     position: absolute;
     right: 0;
-    top: -0.02rem;
+    top: 0;
     font-size: 0.13rem;
 }
 .yao .infos span{
@@ -1119,7 +1119,7 @@ h4{
 	padding: 0.03rem 0.05rem; 
 	position: absolute;
 	right: 0;
-	top: -0.05rem;
+	top: -0.03rem;
 }
 .lu .info{
 	width: 85%;
