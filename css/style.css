@@ -846,7 +846,7 @@ h4{
 }
 .ill-list .tit{
 	color: #FF339A;
-	padding: 0.05rem 0 0.04rem 0.05rem;
+	padding: 0.05rem 0 0.04rem 0;
 	border-bottom: 1px solid #ccc;
 	font-size: 0.17rem;
 }
