@@ -640,7 +640,7 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.025rem;
+	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -739,7 +739,7 @@ h4{
 	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -0.01rem;
 	font-size: 0.12rem;
 }
 .quline{
@@ -1012,7 +1012,7 @@ h4{
 	padding: 0.03rem 0.05rem;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: -0.01rem;
 	font-size: 0.12rem;
 }
 .me .info span{
@@ -1216,7 +1216,7 @@ h4{
 	padding: 0.03rem 0.05rem 0;
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 0.01rem;
 	font-size: 0.12rem;
 }
 .add-min .info{
