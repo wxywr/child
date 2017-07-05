@@ -53,12 +53,13 @@ nav img{
 	font-size: 0.16rem;
 }
 #form .left{
-	text-align: center;
-	width: 30%;
+	text-align: right;
+	width: 35%;
 }
 #form .right{
-	width: 70%;
+	width: 62%;
 	text-align: left;
+	margin-left: 3%;
 }
 #form .right .year,.month,.day{
 	width: 40px;
@@ -115,6 +116,7 @@ nav img{
 	margin: 0.1rem auto;
 	color: #FFF;
 	background-color: #F64CA2;
+	opacity: 0.5;
 	font-size: 0.16rem;
 	padding: 0.06rem 0;
 	border: 0;
