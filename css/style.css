@@ -919,6 +919,7 @@ h4{
 }
 .yao .infos{
 	display: none;
+	margin-bottom: 0.2rem;
 }
 #file,#files,#filess{
 	display: block;
@@ -1036,6 +1037,7 @@ h4{
 }
 .me .info{
 	display: none;
+	margin-bottom: 0.2rem;
 }
 .bl_a{
 	width: 60%;
@@ -1122,11 +1124,11 @@ h4{
 .lu .info{
 	width: 85%;
 	margin: 0 auto;
-	font-size: 0.13rem;
+	font-size: 0.14rem;
 	display: none;
 }
 .lu .min{
-	width: 1.8rem;
+	width: 1.7rem;
 	height: 0.25rem;
 	border: 1px solid #333;
 	border-width: 0 0 1px 0;
@@ -1211,7 +1213,7 @@ h4{
 	display: inline-block;
 	background-color: #FF679A;
 	color: #fff;
-	padding: 0.03rem 0.05rem;
+	padding: 0.03rem 0.05rem 0;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -1220,11 +1222,11 @@ h4{
 .add-min .info{
 	width: 86%;
 	margin: 0 auto 0.2rem;
-	font-size: 0.13rem;
+	font-size: 0.14rem;
 	display: none;
 }
 .add-min .min{
-	width: 1.8rem;
+	width: 1.7rem;
 	height: 0.25rem;
 	border: 1px solid #333;
 	border-width: 0 0 1px 0;
@@ -1246,7 +1248,7 @@ h4{
 .add-min .info .mui-switch{
 	position: absolute;
 	top: 0;
-	right: 2%;
+	right: 4%;
 }
 .add-min .want{
 	font-size: 0.17rem;
