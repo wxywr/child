@@ -550,31 +550,31 @@ h4{
 	height: 0.9rem;
 	border: 5px solid #e8e9ec;
 	border-width: 5px 0 5px 0; 
-	background-color: #F5A6D3;
+	background-color: #fff;
 	position: relative;
 }
-.start p{
-	font-size: 0.2rem;
-	font-family: STXingkai;
-	color: #B80090;
+.start .zhang{
 	margin-top: 0.2rem;
+	margin-left: 5%;
+	width: 65%;
 }
-.start img{
-	width: 10%;
+.start .childs{
+	width: 11%;
 	position: absolute;
 	right: 5%;
-	top: 0.15rem;
+	top: 0.07rem;
 }
 .start a{
 	display: inline-block;
 	color: #fff;
-	background-color: #CC66CC;
+	background-color: #E519A7;
 	text-align: center;
 	padding: 0.03rem;
 	border-radius: 10px;
 	position: absolute;
 	right: 4%;
-	top: 0.3rem;
+	top: 0.32rem;
+	font-size: 0.12rem;
 }
 .tool{
 	width: 100%;
