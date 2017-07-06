@@ -1433,7 +1433,8 @@ header .close{
 }
 .paginations .select input:checked+label{
 	background-image: url(../images/radio-b.png);
-	background-size: 140%;
+	background-size: 150%;
+	background-position: center;
 }
 .paginations .select input[type='radio'],input[type='checkbox']{
 	opacity: 0;
