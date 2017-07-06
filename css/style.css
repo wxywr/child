@@ -376,15 +376,17 @@ h4{
 }
 .enter label{
 	display: inline-block;
-	width: .2rem;
-	height: .2rem;
-	vertical-align: -0.03rem;
+	width: .17rem;
+	height: .17rem;
+	vertical-align: -0.04rem;
 	background-image: url(../images/fu.png);
-	background-size: cover;
+	background-size: 100%;
+	background-position: center;
 }
 .enter input[type="radio"]:checked+label{
 	background-image: url(../images/fuu.png);
-	background-size: cover;
+	background-size: 100%;
+	background-position: cover;
 }
 .enter .must{
 	width: 90%;
