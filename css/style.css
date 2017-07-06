@@ -97,7 +97,7 @@ nav img{
 	background-position: 0 -0.42rem;
 }
 #form .right input[type="radio"]:checked+label.label-a{
-	background-position: 0 -0.2rem;
+	background-position: 0 -0.21rem;
 }
 #form .right input[type="radio"]:checked+label.label-b{
 	background-position: 0 -0.63rem;
